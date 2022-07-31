@@ -143,7 +143,8 @@ img {
 .nav-link:hover,
 .nav-link:focus {
     color: var(--active-color);
-    transition-duration: 250ms;
+    transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .address-item:last-child {
@@ -174,7 +175,7 @@ img {
 .address-link:hover,
 .address-link:focus {
     color: var(--active-color);
-    transition-duration: 250ms;
+    transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -234,7 +235,7 @@ img {
 .header-section .header-btn:hover,
 .header-section .header-btn:focus {
     background-color: #188ce8;
-    transition-duration: 250ms;
+    transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Peculiarities section особливості*/
@@ -369,7 +370,7 @@ img {
 .clients-link:focus {
     border-color: var(--active-color);
     color: var(--active-color);
-    transition-duration: 250ms;
+    transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Footer */
@@ -427,7 +428,7 @@ img {
 .footer-menu .street-address:hover,
 .footer-menu .street-address:focus {
     color: var(--active-color);
-    transition-duration: 250ms;
+    transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-title {
@@ -475,7 +476,7 @@ img {
 .social-link:focus {
     background-color: var(--active-color);
     color: var(--prime-white);
-    transition-duration: 250ms;
+    transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Portfolio page and section */
@@ -520,7 +521,7 @@ img {
 
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.1);
-        transition-duration: 250ms;
+        transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Cards */
@@ -544,7 +545,7 @@ img {
 .work-link:hover,
 .work-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition-duration: 250ms;
+    transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
