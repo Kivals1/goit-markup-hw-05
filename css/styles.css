@@ -1,16 +1,24 @@
 :root {
     /* Text color */
     --prime-color: #212121;
-    --active-color: #2196f3;
+    
     --prime-white: #ffffff;
+    
+    --active-color: #2196f3;
+    
     --grey-text: #757575;
+   
     /* Background color */
     --prime-bg-color: #2f303a;
+    
     --second-bg-color: #f5f4fa;
+   
     --social-bg-color: rgba(255, 255, 255, 0.1);
     /* Border color */
     --border-color: #eeeeee;
+    
     --second-border-color: #afb1b8;
+    
     /* Cubic */
     --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -22,7 +30,7 @@ body {
     letter-spacing: 0.03em;
 }
 
-/* reset */
+/* Reset all */
 
 h1,
 h2,
@@ -40,7 +48,7 @@ img {
     display: block;
 }
 
-/* Wrappers */
+/* Sactions and container */
 
 .section {
     padding-top: 94px;
@@ -597,7 +605,6 @@ img {
 }
 
 
-
 .work-btn {
     display: block;
     padding: 6px 22px;
@@ -611,7 +618,8 @@ img {
     border-radius: 4px;
     border: none;
     cursor: pointer;
-    transition: background-color 250ms var(--cubic);
+    transition: color 250ms var(--cubic), background-color 250ms var(--cubic),
+        box-shadow 250ms var(--cubic);
 }
 
 .active-btn {
@@ -644,14 +652,45 @@ img {
 .work-link {
     text-decoration: none;
     display: block;
-    transition: background-color 250ms var(--cubic);
+    transition: box-shadow 250ms var(--cubic);
 }
 
 .work-link:hover,
 .work-link:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+/* Work overlay */
+
+.work-direct {
+    position: relative;
+    overflow: hidden;
+}
+
+.work-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(0);
+
+    transition: transform 250ms var(--cubic);
+}
+
+.work-link:hover .work-overlay,
+.work-link:focus .work-overlay {
+    transform: translateY(-100%);
+}
+
+.overlay-desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: var(--prime-white);
+}
 
 
 .text-wrp {
@@ -663,7 +702,6 @@ img {
     border-right: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 }
-
 
 .work-img {
     display: block;
