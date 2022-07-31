@@ -119,20 +119,13 @@ img {
     margin-left: auto;
 }
 
-/* Methods for selecting elements for cleaning extreme geometry */
-/*  */
+
 
 .nav-item:not(:last-child) {
     margin-right: 50px;
 }
 
-/* .nav-item + .nav-item {
-		margin-left: 50px;
-	} */
 
-/* .nav-item:last-child {
-		margin-right: 0;
-	} */
 
 .nav-link {
     display: block;
@@ -181,29 +174,11 @@ img {
     color: var(--active-color);
 }
 
-/* .address-item:first-child::before {
-	content: "";
-	width: 16px;
-	height: 12px;
-	margin-right: 10px;
-	background-image: url(../icons/header/email.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-}
 
-.address-item:last-child::before {
-	content: "";
-	width: 10px;
-	height: 16px;
-	margin-right: 10px;
-	background-image: url(../icons/header/smartphone.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-} */
 
-/* Solutions section */
+/* Header section */
 
-.solutions {
+.header-section {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -222,7 +197,7 @@ img {
     background-position: center;
 }
 
-.solutions .solutions-title {
+.header-section .header-title {
     max-width: 696px;
     margin-bottom: 30px;
     margin-left: auto;
@@ -235,7 +210,7 @@ img {
     color: var(--prime-white);
 }
 
-.solutions .solutions-btn {
+.header-section .header-btn {
     display: inline-block;
     padding: 10px 32px;
     min-width: 200px;
@@ -253,12 +228,12 @@ img {
     cursor: pointer;
 }
 
-.solutions .solutions-btn:hover,
-.solutions .solutions-btn:focus {
+.header-section .header-btn:hover,
+.header-section .header-btn:focus {
     background-color: #188ce8;
 }
 
-/* Peculiarities section */
+/* Peculiarities section особливості*/
 
 .peculiarities-items {
     display: flex;
@@ -509,9 +484,7 @@ img {
     list-style: none;
 }
 
-/* .work-btn-item:not(:last-child) {
-	margin-right: 8px;
-} */
+
 
 .work-btn {
     display: block;
@@ -565,14 +538,7 @@ img {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-/* Change to gap */
-/* .work-card:not(:nth-child(3n)) {
-	margin-right: 30px;
-} */
-/* 
-.work-card:not(:nth-last-child(-n + 3)) {
-	margin-bottom: 30px;
-} */
+
 
 .text-wrp {
     padding-top: 20px;
